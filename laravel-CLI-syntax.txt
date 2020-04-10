@@ -1,0 +1,118 @@
+						# Laravel Commandline Syntax #
+
+1. php artisan serve 
+	- untuk membukan server milik Laravel 
+	
+2. php artisan cache:clear 
+	- untuk menghapus cache pada browser 
+	
+3. php artisan config:cache 
+	- untuk configurasi cache baru dan membersihkan cache lama
+	
+4. composer require laravel/ui
+	- untuk menginstal package scaffholding fitur bawaan laravel 
+	
+5. php artisan ui vue --auth
+	- untuk membuat fitur authentikasi dengan scaffholding milik laravel
+	
+6. npm install && npm run dev 
+	- untuk menginstall dan mengenerate templete auth scaffholding
+	
+7. php artisan migrate 
+	- untuk memjalankan migrasi
+	
+8. php artisan route:list
+	- untuk menampilkan semua route yang telah dibuat ( tersedia )
+	
+9. php artisan make:migration namaMigration_table_namaTabale
+	- untuk membuat migration dengan nama migrasi dengan tujuan nama table
+	
+10. php artisan make:seeder NamaSeeder
+	- untuk membuat file seeder dengan nama file seeder
+	
+11. php artisan db:seed --class=NamaSeeder
+	- untuk melakukan seeding dengan spesifikasi nama fileSeeder
+	
+12. php artisan db:seed
+	- untuk melakukan seed melalui file databaseSeed 
+	* Note : cara ini bisa digunakan apabila class namafileSeed sudah dipanggil dalam
+			 - di dalam method databaseSeed
+	* contoh : $this->call('NamafileSeed")
+	
+13. php artisan make:controller 
+	- untuk membuat controller 
+	
+14. php artisan make:controller NamaController 
+	- untuk membuat controller dengan NamaController 
+	
+15. php artisan make:controller NamaController --resource
+	- untuk membuat controller dengan NamaController yang sudah di isi dengan Method
+	  method di dalam contoller tersebut 
+	  
+16. php artisan make:controller NamaController -r -m NamaModel
+	- untuk membuat contoller dengan NamaController yang sudah diisikan dengan method
+	  method controller sekaligus membuat NamaModel berdasarkan NamaController
+	* Note : dengan cara ini maka class model sudah dipanggil di dalam NamaController 
+	
+17. php artisan make:model 
+	- untuk membuat model
+	
+18. php artisan make:model NamaModel
+	- untuk membuat model dengan NamaModel
+	
+19. php artisan make:model NamaModel --resource 
+	- untuk membuat model dengan NamaModel sekaligus Method method di dalam model 
+	
+20. php artisan make:model NamaModel -r -m NamaController 
+	- untuk membuat Model dengan NamaModel yang sudah diisikan method method di dalam Model 
+	  sekaligus membuat NamaController 
+	* Note : dengan cara ini maka class model sudah dipanggil di dalam NamaController 
+
+21. php artisan list --raw 
+	- untuk menampilkan semua perintah commanline milik laravel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
